@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trámites de extranjería para colombianos en España | NIE, nacionalidad y más</title>
+<meta name="description" content="Trámites de extranjería solo para colombianos en España: renovación de NIE desde 50 €, nacionalidad española, certificado digital y antecedentes penales de Colombia. Atención online por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f1e7; --paper-2:#ece5d4; --ink:#14251f; --ink-2:#41524b;
+  --green:#1d4a3c; --green-d:#123228; --sun:#e0a526; --clay:#b4532a;
+  --line:#d8cfba; --white:#fffdf8; --wa:#1fa855;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:80px 0}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:12px}
+.lead{color:var(--ink-2);max-width:620px;margin-bottom:40px}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);font-weight:600;margin-bottom:10px}
+
+/* header */
+header{border-bottom:1px solid var(--line);background:var(--paper)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;max-width:1120px;margin:0 auto}
+.logo{font-family:Fraunces,serif;font-weight:700;font-size:1.25rem;display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo i{width:30px;height:30px;border-radius:8px;background:var(--green);display:grid;place-items:center;color:var(--sun);font-style:normal;font-size:1rem}
+.badges{display:flex;gap:8px;flex-wrap:wrap}
+.badge{font-size:.74rem;border:1px dashed var(--clay);color:var(--clay);padding:4px 10px;border-radius:99px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;font-weight:600;font-size:1rem;border:0;border-radius:99px;padding:15px 28px;cursor:pointer;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{background:#17924a;transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.micro{font-size:.85rem;color:var(--ink-2);margin-top:12px}
+
+/* hero */
+.hero{padding:64px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font-size:clamp(2.2rem,5vw,3.5rem);margin-bottom:18px}
+h1 em{font-style:normal;color:var(--clay)}
+.hero p.sub{font-size:1.15rem;color:var(--ink-2);margin-bottom:26px;max-width:520px}
+form.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;background:var(--white);padding:16px;border:1px solid var(--line);border-radius:var(--r);max-width:540px}
+form.quick input,form.quick select{font:inherit;padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);width:100%}
+form.quick input:focus,form.quick select:focus{outline:2px solid var(--green);border-color:transparent}
+form.quick .btn{grid-column:1/-1}
+.file{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:12px 12px 0 var(--paper-2);position:relative}
+.file h4{font-family:Fraunces,serif;font-size:1.1rem;margin-bottom:4px}
+.file small{color:var(--ink-2)}
+.file ul{list-style:none;margin-top:18px}
+.file li{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:.95rem}
+.dot{width:22px;height:22px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:.75rem;font-weight:700}
+.dot.ok{background:var(--green);color:#fff}
+.dot.wip{background:var(--sun);color:var(--ink)}
+.dot.todo{border:2px dashed var(--line)}
+.stamp{position:absolute;top:-14px;right:20px;background:var(--clay);color:#fff;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:6px;transform:rotate(3deg)}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.card h3{font-size:1.2rem;margin:10px 0 8px}
+.card p{color:var(--ink-2);font-size:.98rem}
+.ico{font-size:1.6rem}
+.problem{background:var(--paper-2)}
+.solve .card{border-top:4px solid var(--green)}
+.solve .benefit{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);color:var(--green);font-weight:600;font-size:.95rem}
+
+/* trust */
+.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.price{display:flex;flex-direction:column}
+.price h3{font-size:1.05rem;min-height:2.6em}
+.amount{white-space:nowrap;font-family:Fraunces,serif;font-size:2.8rem;font-weight:700;color:var(--green);line-height:1;margin:6px 0 10px}
+.price p{flex:1;margin-bottom:18px}
+.price .btn{padding:12px 18px;font-size:.95rem}
+.trust-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.trust-row div{border:1.5px dashed var(--line);border-radius:12px;height:84px;display:grid;place-items:center;text-align:center;font-size:.72rem;color:var(--clay);padding:8px}
+.trust-note{margin-top:16px;font-size:.88rem;color:var(--ink-2)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:stretch}
+.step{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.step b{font-family:Fraunces,serif;font-size:2.4rem;color:var(--sun);display:block;line-height:1}
+.step h3{margin:10px 0 6px;font-size:1.2rem}
+.step p{color:var(--ink-2);font-size:.97rem}
+.arrow{align-self:center;font-size:1.8rem;color:var(--clay)}
+
+/* benefits */
+.benefits{background:var(--green);color:var(--paper)}
+.benefits .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.benefits h2{color:#fff}
+.benefits .eyebrow{color:var(--sun)}
+.checks{list-style:none;margin:24px 0 30px}
+.checks li{display:flex;gap:14px;padding:14px 0;border-top:1px solid rgba(255,255,255,.18)}
+.checks li span{color:var(--sun);font-weight:700}
+.checks strong{display:block;color:#fff}
+.checks p{color:#cfe0d8;font-size:.95rem}
+.panel{background:var(--green-d);border-radius:var(--r);padding:30px;border:1px solid rgba(255,255,255,.14)}
+.panel h4{font-family:Fraunces,serif;color:#fff;font-size:1.15rem;margin-bottom:16px}
+.panel .row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-top:1px solid rgba(255,255,255,.14);font-size:.95rem;color:#cfe0d8}
+.panel .row b{color:var(--sun);font-weight:600;white-space:nowrap}
+
+/* faq */
+.faq{max-width:760px}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:12px;margin-bottom:12px}
+.faq summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:600;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--clay);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 24px 22px;color:var(--ink-2)}
+
+/* cta final */
+.final{background:var(--paper-2);text-align:center}
+.final h2{max-width:680px;margin:0 auto 12px}
+.final p{color:var(--ink-2);margin-bottom:26px}
+
+/* footer */
+footer{background:var(--ink);color:#b9c5bf;padding:44px 0 90px;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between}
+footer .logo{color:#fff}
+footer nav a{margin-right:20px;text-decoration:none}
+footer nav a:hover{color:#fff}
+.legal{width:100%;font-size:.8rem;color:#8a998f;border-top:1px solid #2c3d36;padding-top:18px}
+
+/* sticky mobile cta */
+.sticky{display:none;position:fixed;bottom:0;left:0;right:0;padding:10px 16px;background:var(--paper);border-top:1px solid var(--line);z-index:9}
+.sticky .btn{width:100%}
+
+@media(max-width:860px){
+  section{padding:56px 0}
+  .hero .wrap,.benefits .wrap{grid-template-columns:1fr;gap:36px}
+  .grid3{grid-template-columns:1fr}
+  .prices{grid-template-columns:1fr 1fr}
+  .trust-row{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg);text-align:center}
+  form.quick{grid-template-columns:1fr}
+  .badges{display:none}
+  .sticky{display:block}
+}
+@media(max-width:520px){.prices{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- 1. HEADER -->
+<header>
+  <div class="nav">
+    <a class="logo" href="#"><i>C</i> Colombianos en España <!-- [NOMBRE_PROVISIONAL] --></a>
+    <div class="badges">
+      <span class="badge">[SELLO_REAL_PENDIENTE]</span>
+      <span class="badge">[Nº COLEGIADO / REGISTRO PENDIENTE]</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- 2. HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Trámites de extranjería · Solo para colombianos</p>
+      <h1>Tu trámite en España, <em>en buenas manos.</em></h1>
+      <p class="sub">¿Eres colombiano en España y necesitas renovar tu NIE, solicitar la nacionalidad o tramitar el certificado digital? Te ayudo de forma rápida, clara y sin errores, con atención online por WhatsApp.</p>
+      <form class="quick" id="leadForm">
+        <input type="text" name="nombre" placeholder="Tu nombre" required autocomplete="given-name">
+        <select name="tramite" required aria-label="Trámite">
+          <option value="" disabled selected>¿Qué necesitas?</option>
+          <option>Renovación de NIE</option>
+          <option>Nacionalidad española</option>
+          <option>Certificado digital</option>
+          <option>Antecedentes penales de Colombia</option>
+          <option>No lo sé, necesito orientación</option>
+        </select>
+        <button class="btn" type="submit"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800 0-1.400.7-2 1-2.300.2-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.2.1.400 0 .6l-.4.600c-.2.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400Z"/></svg> Contar mi caso por WhatsApp</button>
+      </form>
+      <p class="micro">Escríbenos y te decimos qué necesitas. Atención online desde cualquier parte de España.</p>
+    </div>
+    <div class="file" aria-hidden="true">
+      <span class="stamp">Expediente en curso</span>
+      <h4>Seguimiento de tu trámite</h4>
+      <small>Así trabajamos cada caso</small>
+      <ul>
+        <li><span class="dot ok">✓</span> Revisión de tu situación y requisitos</li>
+        <li><span class="dot ok">✓</span> Lista de documentos personalizada</li>
+        <li><span class="dot wip">…</span> Preparación y presentación del expediente</li>
+        <li><span class="dot todo"></span> Seguimiento hasta la resolución</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PROBLEMA -->
+<section class="problem">
+  <div class="wrap">
+    <p class="eyebrow">El problema</p>
+    <h2>Un papel mal presentado puede costarte meses.</h2>
+    <p class="lead">Si te piden los antecedentes penales de Colombia o no sabes por dónde empezar, no estás solo.</p>
+    <div class="grid3">
+      <div class="card"><div class="ico">📄</div><h3>No sabes qué documentos piden</h3><p>Los requisitos cambian según tu caso. Presentar de más o de menos cuesta tiempo.</p></div>
+      <div class="card"><div class="ico">⏳</div><h3>Las citas y los plazos te agobian</h3><p>Caducidades, citas previas y requerimientos con fecha límite. Perder una cita complica todo.</p></div>
+      <div class="card"><div class="ico">🤷</div><h3>Documentos desde Colombia</h3><p>Antecedentes penales y otros papeles del país de origen: ¿cuáles, cómo y cuándo pedirlos?</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SOLUCIÓN -->
+<section class="solve">
+  <div class="wrap">
+    <p class="eyebrow">Cómo lo resolvemos</p>
+    <h2>Un proceso claro, con una persona al otro lado.</h2>
+    <p class="lead">Cada servicio está pensado para quitarte una preocupación concreta.</p>
+    <div class="grid3">
+      <div class="card"><h3>Revisión de requisitos</h3><p>Revisamos tus documentos y los requisitos según tu caso concreto.</p><div class="benefit">→ Sabes qué hacer desde el primer día.</div></div>
+      <div class="card"><h3>Formularios listos</h3><p>Preparamos y presentamos los formularios para que no pierdas citas ni tiempo.</p><div class="benefit">→ Menos riesgo de errores y requerimientos.</div></div>
+      <div class="card"><h3>Orientación y seguimiento</h3><p>Te guiamos paso a paso durante todo el proceso y seguimos tu expediente.</p><div class="benefit">→ Nada se te pasa y no tienes que perseguir a nadie.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Servicios para colombianos</p>
+    <h2>Precios claros, sin sorpresas.</h2>
+    <p class="lead">Elige el trámite que necesitas. Si dudas cuál es, te orientamos primero.</p>
+    <div class="prices">
+      <div class="card price"><h3>Renovación de NIE</h3><div class="amount">50 €</div><p>Renovación de NIE en España, tu primera vez o renovación de larga duración.</p><a class="btn wa-link" data-msg="Hola, quiero información sobre la renovación de NIE (50 €).">Lo quiero</a></div>
+      <div class="card price"><h3>Nacionalidad española</h3><div class="amount">180 €</div><p>Solicitud de la nacionalidad española.</p><a class="btn wa-link" data-msg="Hola, quiero información sobre la solicitud de nacionalidad española (180 €).">Lo quiero</a></div>
+      <div class="card price"><h3>Certificado digital</h3><div class="amount">20 €</div><p>Solicitud de tu certificado digital.</p><a class="btn wa-link" data-msg="Hola, quiero información sobre el certificado digital (20 €).">Lo quiero</a></div>
+      <div class="card price"><h3>Antecedentes penales de Colombia</h3><div class="amount">30 €</div><p>Solicitud de antecedentes penales de Colombia.</p><a class="btn wa-link" data-msg="Hola, quiero información sobre antecedentes penales de Colombia (30 €).">Lo quiero</a></div>
+    </div>
+    <p class="trust-note"><strong>¿Qué incluye?</strong> Revisión de requisitos según tu caso, preparación y presentación de formularios, orientación paso a paso y seguimiento de tu expediente. [TASAS_PENDIENTE: indicar si las tasas oficiales van aparte].</p>
+  </div>
+</section>
+
+<!-- 5. CONFIANZA -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Confían en nosotros</p>
+    <h2>Respaldo y experiencia</h2>
+    <p class="lead">Aquí irán tus sellos, colegiaciones y logos reales.</p>
+    <div class="trust-row">
+      <div>[PRUEBA_REAL_PENDIENTE]<br>Logo / sello 1</div>
+      <div>[PRUEBA_REAL_PENDIENTE]<br>Logo / sello 2</div>
+      <div>[PRUEBA_REAL_PENDIENTE]<br>Logo / sello 3</div>
+      <div>[PRUEBA_REAL_PENDIENTE]<br>Logo / sello 4</div>
+      <div>[PRUEBA_REAL_PENDIENTE]<br>Logo / sello 5</div>
+    </div>
+    <p class="trust-note"><!-- No inventar testimonios ni cifras: añadir solo los reales y verificables. -->[PRUEBA_REAL_PENDIENTE] Espacio reservado para testimonios y número de casos reales.</p>
+  </div>
+</section>
+
+<!-- 6. CÓMO FUNCIONA -->
+<section style="background:var(--paper-2)">
+  <div class="wrap">
+    <p class="eyebrow">Cómo funciona</p>
+    <h2>Tres pasos, sin papeleo innecesario.</h2>
+    <p class="lead">&nbsp;</p>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Escríbenos</h3><p>Cuéntanos tu caso por WhatsApp o correo en un par de minutos.</p></div>
+      <div class="arrow">→</div>
+      <div class="step"><b>2</b><h3>Revisamos tus documentos</h3><p>Te explicamos requisitos y pasos antes de empezar.</p></div>
+      <div class="arrow">→</div>
+      <div class="step"><b>3</b><h3>Preparamos y presentamos</h3><p>Hacemos los formularios y seguimos tu expediente hasta el final.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. BENEFICIOS -->
+<section class="benefits">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Por qué elegirnos</p>
+      <h2>Tranquilidad para ti y tu familia.</h2>
+      <ul class="checks">
+        <li><span>✓</span><div><strong>Un trámite rápido, claro y sin errores</strong><p>Revisamos todo antes de presentar para que no pierdas citas ni tiempo.</p></div></li>
+        <li><span>✓</span><div><strong>Hecho para colombianos en España</strong><p>Conocemos los papeles que te piden, también los que salen de Colombia.</p></div></li>
+        <li><span>✓</span><div><strong>Atención online y precio claro</strong><p>Por WhatsApp o correo, desde cualquier parte. Precios visibles desde 20 €.</p></div></li>
+      </ul>
+      <a class="btn wa-link" href="#">Hablar por WhatsApp</a>
+    </div>
+    <div class="panel" aria-hidden="true">
+      <h4>Resumen de tu expediente</h4>
+      <div class="row"><span>Renovación de NIE</span><b>50 €</b></div>
+      <div class="row"><span>Nacionalidad española</span><b>180 €</b></div>
+      <div class="row"><span>Certificado digital</span><b>20 €</b></div>
+      <div class="row"><span>Antecedentes penales Colombia</span><b>30 €</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2>Lo que más nos preguntan</h2>
+    <p class="lead">&nbsp;</p>
+    <div class="faq">
+      <details><summary>¿Cuánto cuesta y qué incluye?</summary><p>Renovación de NIE 50 €, nacionalidad española 180 €, certificado digital 20 € y antecedentes penales de Colombia 30 €. Incluye revisión de requisitos, preparación y presentación de formularios, orientación y seguimiento. [TASAS_PENDIENTE: confirmar si las tasas oficiales van aparte].</p></details>
+      <details><summary>¿Cuánto tarda mi trámite?</summary><p>Los plazos de resolución los marca la Administración y varían según el trámite. Nosotros preparamos todo con rapidez y seguimos tu expediente, pero no podemos prometer fechas.</p></details>
+      <details><summary>¿Y si me piden más documentos o me lo deniegan?</summary><p>Nadie puede garantizar el resultado de un trámite. Reducimos el riesgo revisando todo antes de presentar y te orientamos si llega un requerimiento. [CONDICIONES_PENDIENTES: indicar si el seguimiento de requerimientos está incluido en el precio].</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CTA FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2>Agenda tu cita hoy y avanza con tu trámite.</h2>
+    <p>Tu trámite, nuestra prioridad. Atención online por WhatsApp y correo, desde cualquier parte.</p>
+    <a class="btn wa-link" href="#">Escribir por WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<!-- 10. FOOTER -->
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#"><i>C</i> Colombianos en España</a>
+    <nav>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Términos y condiciones</a>
+      <a class="wa-link" href="#">Contacto</a>
+    </nav>
+    <p class="legal">[DATOS_LEGALES_PENDIENTES: titular, NIF, domicilio, nº colegiado si aplica]. La información de esta web es orientativa y no sustituye el asesoramiento sobre tu caso concreto.</p>
+  </div>
+</footer>
+
+<div class="sticky"><a class="btn wa-link" href="#">Escribir por WhatsApp</a></div>
+
+<script>
+  // Sustituye por tu número en formato internacional, sin + ni espacios (ej. 34600123456)
+  var WA_NUMBER = "34600000000";
+  function waUrl(msg){ return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg); }
+
+  document.querySelectorAll(".wa-link").forEach(function(a){
+    a.href = waUrl(a.dataset.msg || "Hola, soy colombiano en España y me gustaría que revisaran mi caso de extranjería.");
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  document.getElementById("leadForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var f = e.target;
+    var msg = "Hola, soy " + f.nombre.value.trim() + ". Necesito ayuda con: " + f.tramite.value + ".";
+    window.open(waUrl(msg), "_blank", "noopener");
+  });
+</script>
+</body>
+</html>
