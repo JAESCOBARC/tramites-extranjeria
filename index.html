@@ -214,21 +214,14 @@ footer nav a:hover{color:var(--dark-ink);text-decoration:underline}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
-/* tarjetas de precio con descuento */
+/* tarjetas de precio */
 .price{background:radial-gradient(120% 70% at 100% 0%,rgba(217,119,87,.30),transparent 60%),var(--dark);color:var(--dark-ink);border:0;border-radius:18px;padding:26px;box-shadow:0 18px 40px rgba(20,20,19,.18)}
-.price-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.price .price-top h3{color:var(--dark-ink);font-size:1.08rem;min-height:0;margin:0}
-.off{background:var(--accent);color:#141413;font-size:.72rem;font-weight:700;letter-spacing:.02em;padding:4px 10px;border-radius:99px;white-space:nowrap}
-.price .desc{color:var(--dark-ink-2);font-size:.92rem;margin:12px 0 0;flex:none;min-height:3em}
-.was{color:var(--dark-ink-2);text-decoration:line-through;text-decoration-thickness:2px;font-size:1rem;margin-top:16px}
-.price .amount{color:var(--dark-ink);font-size:3.1rem;margin:2px 0 4px}
+.price h3{color:var(--dark-ink)}
+.price .desc{color:var(--dark-ink-2);font-size:.92rem;margin:12px 0 0;flex:none;min-height:4.6em}
+.price .amount{color:var(--dark-ink);font-size:3.1rem;margin:22px 0 22px}
 .price .amount small{font-size:1.4rem;margin-left:4px;color:var(--dark-ink-2)}
-.price .save{color:var(--accent);font-size:.9rem;font-weight:600;margin:0 0 20px;flex:none}
-.price .btn{background:var(--dark-ink);color:#141413;padding:13px 16px;font-size:.95rem;width:100%}
+.price .btn{background:var(--dark-ink);color:#141413;width:100%}
 .price .btn:hover{background:#fff;color:#141413}
-.feat{list-style:none;margin-top:22px;padding-top:18px;border-top:1px solid var(--dark-line);display:grid;gap:10px;font-size:.9rem;color:var(--dark-ink-2)}
-.feat li{display:flex;gap:10px;align-items:flex-start}
-.feat li::before{content:"✓";color:var(--accent);font-weight:700;flex:none}
 </style>
 </head>
 <body>
@@ -316,60 +309,28 @@ footer nav a:hover{color:var(--dark-ink);text-decoration:underline}
     <p class="lead">Elige el trámite que necesitas. Si dudas cuál es, te orientamos primero.</p>
     <div class="prices">
     <article class="price">
-      <div class="price-top"><h3>Renovación de NIE</h3><span class="off">50% OFF</span></div>
+      <h3>Renovación de NIE</h3>
       <p class="desc">Renovación de NIE en España, tu primera vez o renovación de larga duración.</p>
-      <div class="was">100 €</div>
       <div class="amount">50<small>€</small></div>
-      <p class="save">Ahorras 50 €</p>
-      <a class="btn wa-link" data-msg="Hola, quiero información sobre la renovación de NIE (50 €).">Lo quiero</a>
-      <ul class="feat">
-        <li>Revisión de requisitos según tu caso</li>
-        <li>Preparación y presentación de formularios</li>
-        <li>Orientación paso a paso</li>
-        <li>Seguimiento de tu expediente</li>
-      </ul>
+      <a class="btn wa-link" data-msg="Hola, quiero información sobre la renovación de NIE (50 €).">Solicitar</a>
     </article>
     <article class="price">
-      <div class="price-top"><h3>Nacionalidad española</h3><span class="off">50% OFF</span></div>
+      <h3>Nacionalidad española</h3>
       <p class="desc">Solicitud de la nacionalidad española.</p>
-      <div class="was">360 €</div>
       <div class="amount">180<small>€</small></div>
-      <p class="save">Ahorras 180 €</p>
-      <a class="btn wa-link" data-msg="Hola, quiero información sobre la solicitud de nacionalidad española (180 €).">Lo quiero</a>
-      <ul class="feat">
-        <li>Revisión de requisitos según tu caso</li>
-        <li>Preparación y presentación de formularios</li>
-        <li>Orientación paso a paso</li>
-        <li>Seguimiento de tu expediente</li>
-      </ul>
+      <a class="btn wa-link" data-msg="Hola, quiero información sobre la solicitud de nacionalidad española (180 €).">Solicitar</a>
     </article>
     <article class="price">
-      <div class="price-top"><h3>Certificado digital</h3><span class="off">50% OFF</span></div>
+      <h3>Certificado digital</h3>
       <p class="desc">Solicitud de tu certificado digital.</p>
-      <div class="was">40 €</div>
       <div class="amount">20<small>€</small></div>
-      <p class="save">Ahorras 20 €</p>
-      <a class="btn wa-link" data-msg="Hola, quiero información sobre el certificado digital (20 €).">Lo quiero</a>
-      <ul class="feat">
-        <li>Revisión de requisitos según tu caso</li>
-        <li>Preparación y presentación de formularios</li>
-        <li>Orientación paso a paso</li>
-        <li>Seguimiento de tu expediente</li>
-      </ul>
+      <a class="btn wa-link" data-msg="Hola, quiero información sobre el certificado digital (20 €).">Solicitar</a>
     </article>
     <article class="price">
-      <div class="price-top"><h3>Antecedentes penales de Colombia</h3><span class="off">50% OFF</span></div>
+      <h3>Antecedentes penales de Colombia</h3>
       <p class="desc">Solicitud de antecedentes penales de Colombia.</p>
-      <div class="was">60 €</div>
       <div class="amount">30<small>€</small></div>
-      <p class="save">Ahorras 30 €</p>
-      <a class="btn wa-link" data-msg="Hola, quiero información sobre antecedentes penales de Colombia (30 €).">Lo quiero</a>
-      <ul class="feat">
-        <li>Revisión de requisitos según tu caso</li>
-        <li>Preparación y presentación de formularios</li>
-        <li>Orientación paso a paso</li>
-        <li>Seguimiento de tu expediente</li>
-      </ul>
+      <a class="btn wa-link" data-msg="Hola, quiero información sobre antecedentes penales de Colombia (30 €).">Solicitar</a>
     </article>
   </div>
   <p class="trust-note"><strong>¿Qué incluye?</strong> Revisión de requisitos según tu caso, preparación y presentación de formularios, orientación paso a paso y seguimiento de tu expediente. [TASAS_PENDIENTE: indicar si las tasas oficiales van aparte].</p>
