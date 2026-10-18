@@ -126,6 +126,8 @@ form.quick input:focus,form.quick select:focus{outline:3px solid var(--verde-cla
 .card-form .micro{text-align:center}
 .card-form .micro a{color:var(--verde-medio)}
 
+.flyer{margin:0 auto;max-width:340px}
+.flyer img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 30px 70px -20px rgba(0,0,0,.5)}
 /* ficha */
 .ficha{background:var(--blanco);border-radius:var(--radio);overflow:hidden;box-shadow:0 30px 70px -20px rgba(0,0,0,.5);color:var(--tinta)}
 .ficha-head{background:var(--verde-profundo);color:#fff;padding:16px 22px;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:10px}
@@ -276,26 +278,7 @@ footer .legal{width:100%;font-size:.8rem;color:#8aa395;border-top:1px solid rgba
     </div>
 
     <div>
-      <div class="ficha" aria-label="Ejemplo de ficha de expediente">
-        <div class="ficha-head">Ficha del expediente <span>Ejemplo</span></div>
-        <div class="ficha-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
-          <div><small>Trámite</small><b>Según tu caso</b></div>
-        </div>
-        <div class="ficha-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg>
-          <div><small>Documentación</small><b>Revisada antes de presentar</b></div>
-        </div>
-        <div class="ficha-row destacada">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <div><small>Seguimiento</small><b>Hasta la resolución</b></div>
-        </div>
-        <div class="ficha-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
-          <div><small>Contacto</small><b>WhatsApp, online</b></div>
-        </div>
-        <p class="ficha-note">Ficha de ejemplo para mostrar cómo llevamos cada expediente.</p>
-      </div>
+      <figure class="flyer"><img src="images/flyer.png" width="326" height="485" alt="Flyer de trámites de extranjería solo para colombianos: renovación de NIE 50 €, solicitud de nacionalidad española 180 €, certificado digital 20 € y antecedentes penales de Colombia 30 €."></figure>
     </div>
   </div>
 </section>
