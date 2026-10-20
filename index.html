@@ -98,11 +98,11 @@ h1 em,h2 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-sp
 .oscuro h1,.oscuro h2,.oscuro h3{color:#fff}
 .oscuro h2 em{color:var(--amarillo);background:none;padding:0}
 .wrap{max-width:1280px;margin:0 auto;padding-left:clamp(20px,4vw,48px);padding-right:clamp(20px,4vw,48px)}
-section{padding-block:clamp(64px,9vw,120px)}
+section{padding-block:clamp(48px,6vw,88px)}
 .claro{background:var(--blanco)}
 .calido{background:var(--crema);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
 .oscuro{background:var(--negro);color:#fff}
-.lead{color:var(--tinta-2);max-width:66ch;margin-bottom:40px;font-size:17px;line-height:1.65}
+.lead{color:var(--tinta-2);max-width:66ch;margin-bottom:28px;font-size:17px;line-height:1.65}
 .oscuro .lead{color:var(--gris-claro)}
 .eyebrow{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--tinta);border-bottom:1px solid var(--linea);padding-bottom:14px}
 .oscuro .eyebrow{color:#fff;border-bottom-color:var(--linea-oscura)}
@@ -123,9 +123,9 @@ section{padding-block:clamp(64px,9vw,120px)}
 .oscuro .micro{color:var(--gris-claro)}
 
 /* hero */
-.hero{background:var(--blanco);padding-block:clamp(72px,12vh,140px) clamp(64px,9vw,120px)}
+.hero{background:var(--blanco);padding-block:clamp(28px,4vw,56px) 0}
 .hero > .wrap > div:first-child{display:flex;flex-direction:column}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
 .hero .eyebrow{border-bottom:3px solid var(--negro)}
 .hero h1{margin:clamp(32px,5vw,64px) 0 0}
 .hero .sub{font-size:clamp(16px,1.6vw,19px);line-height:1.65;color:var(--tinta-2);max-width:52ch;margin:28px 0 0}
@@ -246,7 +246,10 @@ footer .legal{width:100%;font-size:13px;color:var(--gris-claro);border-top:1px s
 }
 @media (max-width:700px){
   body{font-size:16px}
-  section{padding-block:56px}
+  section{padding-block:44px}
+  .hero{padding-block:24px 0}
+  .hero .wrap{gap:32px}
+  .solve .cols{margin-bottom:32px}
   .prices{grid-template-columns:1fr}
   .btn{width:100%}
   .hero .btn{align-self:stretch}
